@@ -21,7 +21,7 @@ public class AutorDto {
 	private String cedula;	
 	
 	@NotNull
-	@Size(min = 5,max = 25, message = "El nombre debe ser entre 5 y 28 carácteres")	
+	@Size(min = 5,max = 25, message = "El nombre debe ser entre 5 y 25 carácteres")	
 	private String nombre;
 	
 	@NotNull
@@ -35,6 +35,7 @@ public class AutorDto {
 	
 	private List<Libro> libro;
 
+	
 	public Integer getId() {
 		return Id;
 	}

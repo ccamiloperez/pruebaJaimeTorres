@@ -142,6 +142,4 @@ public class Autor {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
-	
-	
 }
