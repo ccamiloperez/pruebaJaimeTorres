@@ -12,6 +12,7 @@
 	<groupId>com.udec</groupId>
 	<artifactId>AutoresLibrosJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>AutoresLibrosJPA</name>
 	<description>Demo project for Spring Boot</description>
 
