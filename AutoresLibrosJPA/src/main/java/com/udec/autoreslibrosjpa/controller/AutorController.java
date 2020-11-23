@@ -38,6 +38,7 @@ public class AutorController {
 	@GetMapping(path = "/listar")
 	public ResponseEntity<List<Autor>> listar() {
 		List<Autor> autores = service.listar();
+		System.out.print("prueba");
 		return new ResponseEntity<List<Autor>>(autores, HttpStatus.OK);
 	}
 	
