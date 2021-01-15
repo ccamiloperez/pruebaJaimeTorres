@@ -59,7 +59,7 @@ public class UsuarioServiceImp implements IUsuarioService, UserDetailsService{
 		if (usuario != null) throw new BusinessLogicException("La cedula ya se encuentra registrada");
 		
 		usuario = repo.findByNick(user.getNick());
-		if (usuario != null) throw new BusinessLogicException("La cedula ya se encuentra registrada");
+		if (usuario != null) throw new BusinessLogicException("El nombre de usuario ya se encuentra registrado");
 		
 		String claveEncrip= bcrypt.encode(user.getClave());
 		

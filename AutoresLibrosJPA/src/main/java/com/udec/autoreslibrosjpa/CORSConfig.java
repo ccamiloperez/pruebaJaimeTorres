@@ -1,4 +1,4 @@
-package com.udec.autoreslibrosjpa.configuration;
+package com.udec.autoreslibrosjpa;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,9 @@ public class CORSConfig {
 	            public void addCorsMappings(CorsRegistry registry) {
 	                registry.addMapping("/**")
 	                        .allowedOrigins("*")
-	                        .allowedMethods("GET", "POST", "PUT","DELETE");
+	                        .allowedMethods("*")
+	                        .allowedHeaders("*")
+	                        .allowCredentials(true);         
 	            }
 	        };
 	    }

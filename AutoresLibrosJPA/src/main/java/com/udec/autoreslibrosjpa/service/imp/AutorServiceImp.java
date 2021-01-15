@@ -245,6 +245,13 @@ public class AutorServiceImp implements IAutorService {
 		repo.eliminarAutorLector(dto.getAutor().getId(), dto.getLector().getId());
 	}
 	
+	public void operacionOptima() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO: handle exception
+		}
+	}
 	
 
 }
